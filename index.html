@@ -44,6 +44,7 @@
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
+        screen.orientation.lock('landscape');
       } else {
         canvas.style.width = "900px";
         canvas.style.height = "600px";
